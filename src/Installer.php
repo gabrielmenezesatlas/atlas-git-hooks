@@ -7,11 +7,12 @@ class Installer
 
     public function install()
     {
+        shell_exec("git config --global --add safe.directory /var/www");
 
         if (! $this->checkGitHookDir()) {
            shell_exec("mkdir ".$this->getGitHookDir());
            shell_exec("cp -R ".$this->getDirName().'/Utils/* '. $this->getGitHookDir() . DIRECTORY_SEPARATOR);
-           shell_exec("chown 1000:1000 -R" . $this->getGitHookDir() . DIRECTORY_SEPARATOR );
+           shell_exec("chown 1000:1000 -R .atlasHooks");
         }
 
         shell_exec("chmod +x " . $this->getGitHookDir() . DIRECTORY_SEPARATOR . '_' . DIRECTORY_SEPARATOR . 'hooks.sh');
