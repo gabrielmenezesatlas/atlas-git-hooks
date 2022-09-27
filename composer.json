@@ -1,0 +1,26 @@
+{
+  "name": "gabrielmenezesatlas/atlas-git-hooks",
+  "description": "Laravel git hooks",
+  "keywords": ["Laravel", "Git", "Hook"],
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/gabrielmenezesatlas/atlas-git-hooks",
+  "authors": [
+    {
+      "name": "Gabriel Menezes",
+      "email": "gabriel.menezes@atlastechnol.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Atlas\\AtlasGitHooks\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Atlas\\AtlasGitHooks\\HookServiceProvider"
+      ]
+    }
+  }
+}
