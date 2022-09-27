@@ -11,6 +11,9 @@
       "email": "gabriel.menezes@atlastechnol.com"
     }
   ],
+  "require": {
+    "php": ">=7.1.0"
+  },
   "autoload": {
     "psr-4": {
       "Atlas\\AtlasGitHooks\\": "src/"
