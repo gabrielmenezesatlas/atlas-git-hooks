@@ -3,7 +3,7 @@
 Package developed to automate and change the main folder referring to git hooks.
 
 ## Installation
-Add private repository:
+Add private repository in composer json file:
 
 ```json
 {
