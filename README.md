@@ -29,7 +29,7 @@ php artisan atlas-git-hooks:git-hooks-install
 
 ## Usage
 
-Change the pre-commit template file with the action you want to take before the user successfully commits.
+Change the pre-commit template file created in .atlasHooks/pre-commit and add the action you want to take before the user successfully commits.
 
 Example if you are using docker:
 ```bash
